@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MailerLite's Top 10 Books of 2023</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    window.onload = function() {
+      const boxesContainer = document.querySelector('.boxes-container');
+      const boxes = document.querySelector('.boxes');
+
+      boxesContainer.addEventListener('scroll', function() {
+        if (boxesContainer.scrollLeft + boxesContainer.offsetWidth >= boxes.scrollWidth) {
+          const clonedBoxes = boxes.cloneNode(true);
+          boxes.appendChild(clonedBoxes);
+        }
+      });
+    }
+
+    function scrollToAllTab() {
+        // var targetSection = document.querySelector('allTab');
+        var targetScrollPosition = window.scrollY + (window.innerHeight * 0.05);
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+
+    function selectTab(tabId) {
+      var tabs = document.getElementsByClassName('tab');
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('selected');
+      }
+
+      var selectedTab = document.getElementById(tabId);
+      selectedTab.classList.add('selected');
+    }
+
+  </script>
+  <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .tab {
+      padding: 15px 30px;
+      background: rgba(34, 34, 34, 0.10);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+    }
+
+    .selected {
+      background: #09C269;
+      color: #FEFEFE;
+    }
+
+    .tab p {
+      font-size: 22px;
+      font-family: Helvetica Neue;
+      font-weight: 500;
+      letter-spacing: 0.44px;
+      word-wrap: break-word;
+      margin: 0; 
+    }
+
+    .header {
+      left: 120px;
+      width: 178px; 
+      height: 46px; 
+      position: absolute
+    }
+
+    .heads {
+      display: flex;
+      width: auto;
+      height: 106px;
+      align-items: center;
+    }
+
+    .hero {
+      padding-left: 60px; 
+      padding-right: 60px; 
+      padding-top: 120px; 
+      padding-bottom: 120px; 
+      left: 60px; 
+      right: 60px; 
+      top: 106px; 
+      position: absolute; 
+      background: #09C269; 
+      border-radius: 30px; 
+      overflow: hidden; 
+      flex-direction: column; 
+      justify-content: flex-start; 
+      align-items: flex-start; 
+      gap: 120px; 
+      display: inline-flex
+    }
+
+    .title {
+      font-size: 40px; font-family: Helvetica Neue; font-weight: 700; word-wrap: break-word
+    }
+
+    .footnote {
+      opacity: 0.40; color: #111111; font-size: 20px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word
+    }
+
+    .heros {
+      display: flex;
+      width: auto;
+    }
+
+    .boxes-container {
+      width: calc(100% - 30px); 
+      margin-top: 90px;
+      overflow-x: auto; 
+      white-space: nowrap; 
+      padding-bottom: 20px; 
+      border-radius: 15px;
+    }
+
+    .boxes {
+      width: 1200px;
+      /* height: 270px; */
+      display: inline-block;
+      white-space: nowrap;
+      border-radius: 15px;
+      /* justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex */
+      animation: moveBoxes 30s linear infinite;
+    }
+
+    .box {
+      display: inline-block;
+      width: 210px;
+      height: 240px;
+      border-radius: 15px;
+      margin-right: 15px;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.8;
+    }
+
+    .box:hover {
+      opacity: 1;
+      box-shadow: 0 8px 12px rgba(17, 17, 17, 0.3);
+      scale: 1.01;
+    }
+
+    .subt {
+      color: #FEFEFE; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; letter-spacing: 0.44px; word-wrap: break-word
+    }
+
+    .subt2 {
+      color: #FEFEFE; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.44px; word-wrap: break-word
+    }
+
+    .subt3 {
+      color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.9px; word-wrap: break-word
+    }
+
+    .largeTitle {
+      color: #FEFEFE; font-size: 100px; font-family: Helvetica Neue; font-weight: 700; word-wrap: break-word
+    }
+
+    p {
+      margin: 0;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .button {
+      padding-left: 30px; 
+      padding-right: 30px; 
+      padding-top: 15px; 
+      padding-bottom: 15px; 
+      background: #111111; 
+      border-radius: 10px; 
+      justify-content: center; 
+      align-items: center; 
+      display: inline-flex
+    }
+
+    @keyframes moveBoxes {
+      0% {
+        transform: translateX(0); 
+      }
+      100% {
+        transform: translateX(-100%); 
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+  <div style="position: relative; background: #FEFEFE; ">
+
+    <!-- header -->
+    <section>
+      <div class="heads">
+        <img class="header" style="width: 178px; height: 46px;" src="./assets/mailerlogo.png" />
+      </div>
+    </section>
+
+
+    <!-- hero section -->
+    <section>
+      <div class="hero">
+        <div>
+          <div>
+            <p class="subt2" style="opacity: 0.80; margin-bottom: 10px;">TOPIC</p>
+            <p class="largeTitle" style="margin-bottom: 10;">Food for your brain.</p>
+            <p class="subt" style="margin-top: 15px;" >It’s the last day of 2023! Today, we’re counting down our list of top 10 books that has resonates the most with our team along this year. Which one resonates with you the most?</p>
+            
+            <div class="button" style="margin-top: 22px;" onclick="scrollToAllTab()">
+                <p class="subt3">SEE LIST</p>
+            </div>
+
+          </div>
+  
+          <!-- book previews -->
+          <div class="boxes-container">
+            <div class="boxes">
+              <div class="box" style="background-image: url(./assets/b1.jpg);"></div>
+              <div class="box" style="background-image: url(./assets/b2.jpg);"></div>
+              <div class="box" style="background-image: url(./assets/b3.jpg);"></div>
+              <div class="box" style="background-image: url(./assets/b4.jpg);"></div>
+              <div class="box" style="background-image: url(./assets/b5.jpg.webp);"></div>
+              <div class="box" style="background-image: url(./assets/b6.jpg);"></div>
+              <div class="box" style="background-image: url(./assets/b7.jpg);"></div>
+              <div class="box" style="background-image: url(./assets/b8.jpg);"></div>
+              <div class="box" style="background-image: url(./assets/b9.jpg);"></div>
+              <div class="box" style="background-image: url(./assets/b10.jpg);"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- contents section -->
+    <section class="contents">
+      <div style="left: 60px; top: 1161px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 120px; display: inline-flex">
+        <div class="subt" style="width: 1320px; color: #111111;">In 2023, several remarkable books captivated readers with their insightful perspectives and compelling narratives. These top 10 selections spanned various genres, from fiction to non-fiction, offering readers a diverse range of experiences and ideas to explore. Each book left a lasting impression, resonating with audiences worldwide and sparking meaningful conversations. <br></br>As readers delved into these literary works, they found themselves transported to different worlds, challenged by thought-provoking concepts, and inspired by the depth of human emotion and imagination. </div>
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+          <p class="title" style="color: #111111;">Emerging categories</p>
+  
+          <!-- row 1 -->
+          <div style="width: 1320px; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
+            
+            <div style="padding: 30px; background: #222222; border-radius: 30px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+              <i class="fa fa-user" style="font-size:36px;color:white;"></i>
+              <p class="subt2">Personal</p>
+              <p style="width: 585px; opacity: 0.60; color: #FEFEFE; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">Personal Development & Productivity</p>
+            </div>
+  
+            <div style="padding: 30px; background: #222222; border-radius: 30px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+              <i class="fa fa-clock-o" style="font-size:36px;color:white;"></i>
+              <p class="subt2">Management</p>
+              <p style="width: 585px; opacity: 0.60; color: #FEFEFE; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">Time Management</p>
+            </div>
+
+          </div>
+  
+          <!-- row 2 -->
+          <div style="width: 1320px; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
+            
+            <div style="padding: 30px; background: #222222; border-radius: 30px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+              <i class="fa fa-headphones" style="font-size:36px;color:white;"></i>
+              <p class="subt2">Focus</p>
+              <p style="width: 585px; opacity: 0.60; color: #FEFEFE; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">Mindfulness and Focus</p>
+            </div>
+  
+            <div style="padding: 30px; background: #222222; border-radius: 30px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+              <i class="fa fa-paint-brush" style="font-size:36px;color:white;"></i>
+              <p class="subt2">Creative</p>
+              <p style="width: 585px; opacity: 0.60; color: #FEFEFE; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">Creativity and Innovation</p>
+            </div>
+
+          </div>
+          
+        </div>
+        <p class="subt" style="width: 1320px; color: #111111;">With themes ranging from resilience to redemption, these books of 2023 captured the essence of the human experience in profound and unforgettable ways. Check out the full list below!</p>
+      </div>
+    </section>
+
+
+    <!-- book section -->
+    <section class="books">
+
+      <div style="padding: 60px; left: 60px; top: 2138px; position: absolute; background: #F3F4F6; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 60px; display: inline-flex">
+        
+        <!-- segments -->
+        <div style="width: 1160px; padding-top: 30px; padding-right: 30px; border-bottom: 2px #09C269 solid; justify-content: flex-start; align-items: flex-start; gap: 15px; display: inline-flex">
+          
+          <div id="allTab" class="tab selected" onclick="selectTab('allTab')">
+            <p>ALL</p>
+          </div>
+          
+          <div id="personalTab" class="tab" onclick="selectTab('personalTab')">
+            <p>Personal</p>
+          </div>   
+          
+          <div id="managementTab" class="tab" onclick="selectTab('managementTab')">
+            <p>Management</p>
+          </div>
+          
+          <div id="focusTab" class="tab" onclick="selectTab('focusTab')">
+            <p>Focus</p>
+          </div>
+          
+          <div id="creativeTab" class="tab" onclick="selectTab('creativeTab')">
+            <p>Creative</p>
+          </div>          
+
+        </div>
+  
+        <!-- book list -->
+        <div style="height: auto; padding-bottom: 60px; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+          
+          <!-- book items -->
+
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b1.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">Atomic Habits</p>
+                <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">BEST SELLER</div>
+                </div>
+              </div>
+              
+              <div style="left: 240px; top: 63px; position: absolute"><span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">James Clear</span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">Discover the transformative power of small habits with James Clear's "Atomic Habits." Learn how tiny changes can lead to remarkable results, whether you want to boost productivity, improve health, or master a new skill. Clear's practical strategies and engaging storytelling make building better habits an enjoyable journey. Say goodbye to self-sabotage and hello to a life of continuous growth and achievement!</p>
+            </div>
+
+          </div>
+
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b2.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">Getting Things Done</p>
+                <!-- <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div> -->
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute"><span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">David Allen</span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">Say farewell to overwhelm and hello to stress-free productivity with David Allen's groundbreaking system in "Getting Things Done." Unleash your creative potential by clearing mental clutter and organizing tasks effectively. Allen's simple yet powerful approach will revolutionize the way you work and live, allowing you to achieve more with less stress. Embrace clarity, focus, and peace of mind as you master the art of getting things done!</p>
+            </div>
+
+          </div>
+  
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b3.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">7 Habits of Highly Effective People</p>
+                <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div>
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute">
+                <span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">
+                Stephen R. Covey
+              </span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">
+                Transform your life and become your most effective self with Stephen R. Covey's timeless classic, "The 7 Habits of Highly Effective People." Dive into proven principles that empower individuals to take control of their destiny and lead with integrity. Covey's holistic approach to personal and professional development offers practical wisdom for achieving lasting success and fulfillment. Join millions of readers worldwide and embark on a journey of profound transformation!
+              </p>
+            </div>
+
+          </div>
+            
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b4.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">Eat That Frog!</p>
+                <!-- <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div> -->
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute">
+                <span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">
+                  Brian Tracy
+              </span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">
+                Ready to conquer procrastination and supercharge your productivity? Dive into Brian Tracy's "Eat That Frog!" and discover 21 actionable strategies to tackle your biggest tasks head-on. Tracy's no-nonsense advice and motivational insights will inspire you to overcome inertia and achieve your goals with confidence. Bid farewell to procrastination and hello to a life of accomplishment and fulfillment!
+              </p>
+            </div>
+
+          </div>
+
+    
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b5.jpg.webp); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">Deep Work</p>
+                <!-- <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div> -->
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute">
+                <span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">
+                  Cal Newport
+              </span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">
+                In a world filled with distractions, Cal Newport's "Deep Work" offers a transformative path to sustained focus and productivity. Learn how to cultivate the ability to concentrate intensely on cognitively demanding tasks, unlocking your full creative potential. Newport's compelling research and practical advice will revolutionize the way you work, allowing you to achieve extraordinary results in less time. Dive deep into "Deep Work" and unleash your true potential!
+              </p>
+            </div>
+
+          </div>
+
+    
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b6.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">The Power of Now</p>
+                <!-- <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div> -->
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute">
+                <span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">
+                  Eckhart Tolle
+              </span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">
+                Embark on a journey to spiritual enlightenment with Eckhart Tolle's transformative masterpiece, "The Power of Now." Tolle's profound teachings illuminate the path to inner peace and liberation from the shackles of the past and future. Discover the timeless wisdom of living in the present moment and unleash the boundless potential that resides within you. Embrace a life of profound joy, fulfillment, and awakening with "The Power of Now."
+              </p>
+            </div>
+
+          </div>
+
+    
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b7.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">Mindset: The New Psychology of Success</p>
+                <!-- <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div> -->
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute">
+                <span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">
+                  Carol S. Dweck
+              </span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">
+                Unlock the secrets of success and fulfillment with Carol S. Dweck's groundbreaking book, "Mindset." Explore the power of your mindset and how it shapes your beliefs, actions, and outcomes. Dweck's research-backed insights reveal the difference between a fixed mindset that limits potential and a growth mindset that fuels resilience and achievement. Transform your life, relationships, and career by cultivating a mindset of limitless possibilities!
+              </p>
+            </div>
+
+          </div>
+
+    
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b8.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">Flow: The Psychology of Optimal Experience</p>
+                <!-- <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div> -->
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute">
+                <span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">
+                  Mihaly Csikszentmihalyi
+              </span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">
+                Dive into the fascinating world of flow and optimal experience with Mihaly Csikszentmihalyi's seminal work, "Flow." Explore the state of effortless concentration and deep fulfillment that arises when we are fully immersed in activities that challenge and inspire us. Csikszentmihalyi's research-driven exploration offers practical insights into how to cultivate flow in everyday life, unlocking peak performance and profound satisfaction. Discover the joy of living in flow and unleash your full potential!
+              </p>
+            </div>
+
+          </div>
+
+    
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b9.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">Steal Like an Artist</p>
+                <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div>
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute">
+                <span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">
+                  Austin Kleon
+              </span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">
+                Embrace your inner artist and unlock your creative potential with Austin Kleon's playful and insightful book, "Steal Like an Artist." Discover how to draw inspiration from the world around you and transform everyday experiences into works of art. Kleon's unconventional wisdom and practical advice will liberate you from creative blocks and ignite your imagination. Embrace the joy of creation and join the ranks of artists who dare to steal, remix, and make something new!
+              </p>
+            </div>
+
+          </div>
+
+    
+          <div style="padding: 30px; background: #FEFEFE; border-radius: 30px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+            
+            <div style="width: 1140px; height: 240px; position: relative">
+              <div style="width: 210px; height: 240px; left: 0px; top: 0px; position: absolute; border-radius: 10px; background-image: url(./assets/b10.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+
+              <!-- book name -->
+              <div style="width: 900px; left: 240px; top: 0px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <p class="title" style="color: #111111;">The War of Art</p>
+                <!-- <div style="width: 141px; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; border: 1.50px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 15px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">RECOMMENDED</div>
+                </div> -->
+              </div>
+
+              <div style="left: 240px; top: 63px; position: absolute">
+                <span style="color: rgba(17, 17, 17, 0.40); font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">by </span><span style="color: rgba(17, 17, 17, 0.60); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">
+                  Steven Pressfield
+              </span></div>
+              <p class="subt" style="left: 395px; top: 120px; position: absolute; opacity: 0.40; color: #111111;">23 Reviews</p>
+              
+              <div style="left: 240px; top: 121px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269;"></i>
+                <i class="fa fa-star" style="font-size:24px; color:#09C269; opacity: 0.4;"></i>
+              </div>
+
+              <div style="left: 240px; top: 186px; position: absolute; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; background: #09C269; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #FEFEFE; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Purchase</div>
+                </div>
+                <div style="padding-left: 30px; padding-right: 30px; padding-top: 15px; padding-bottom: 15px; border-radius: 10px; border: 2px #09C269 solid; justify-content: center; align-items: center; display: flex">
+                  <div style="color: #09C269; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.40px; word-wrap: break-word">Rent</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+              <p style="color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Description</p>
+              <p style="width: 1140px; opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">
+                Conquer resistance and ignite your creative spark with Steven Pressfield's inspiring manifesto, "The War of Art." Uncover the internal forces that sabotage creativity and learn how to overcome procrastination, self-doubt, and fear. Pressfield's no-nonsense approach will empower you to overcome obstacles and unleash your artistic potential. Join the ranks of creative warriors who dare to pursue their passions and transform their lives!
+              </p>
+            </div>
+
+          </div>
+
+        <!-- end of list -->
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="footer">
+      <div style="padding-left: 120px; padding-right: 120px; padding-top: 90px; padding-bottom: 90px; left: 0px; top: 7800px; position: absolute; background: #F3F4F6; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 90px; display: inline-flex">
+        
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+
+          <div class="title">Let's keep in touch</div>
+
+          <div style="opacity: 0.60; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">Sign up for our weekly email marketing newsletter <br/>and MailerLite updates.</div>
+          <div style="padding-top: 10px; padding-bottom: 9px; padding-left: 20px; padding-right: 10px; background: #FEFEFE; border-radius: 10px; border: 2px rgba(17, 17, 17, 0.20) solid; justify-content: flex-end; align-items: center; gap: 142px; display: inline-flex">
+            <div style="color: rgba(17, 17, 17, 0.30); font-size: 22px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Enter your email</div>
+            <div style="align-self: stretch; padding-left: 20px; padding-right: 20px; padding-top: 13px; padding-bottom: 13px; background: #09C269; border-radius: 5px; justify-content: center; align-items: center; display: inline-flex">
+              <div style="color: #FEFEFE; font-size: 18px; font-family: Helvetica Neue; font-weight: 500; letter-spacing: 0.36px; word-wrap: break-word">Subscribe</div>
+            </div>
+          </div>
+        </div>
+  
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+
+          <div style="width: 1200px; height: 0px; opacity: 0.10; border: 1px #111111 solid"></div>
+
+          <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 15px; display: flex">
+            <div style="opacity: 0.80; color: #111111; font-size: 22px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word">2010 - 2024 © MailerLite. All rights reserved.</div>
+            
+            <div style="justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
+              <p class="footnote">Terms of Service</p>
+              <p class="footnote">Cookies Settings</p>
+              <p class="footnote">Brand Assets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
